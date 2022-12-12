@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="[LOGO]" class="logo" alt="LOGO" />
+        <form class="search" action="#">
+          <input type="text" class="search__input" placeholder="Search.." />
+          <button class="search__button">
+            <i class="fas fa-search search__icon"></i>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <i class="fas fa-user user-nav__icon"></i>
+          </div>
+          <div class="user-nav__icon-box">
+            <i class="fas fa-book user-nav__icon"></i>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <i class="fas fa-message"></i>
+            <span class="user-nav__notification">10</span>
+          </div>
+          <div class="user-nav__user">
+            <img src="[USER_PICTURE]" alt="USER" class="user-nav__user-photo" />
+            <span class="user-nav__user-name">Vak</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <i class="fas fa-house side-nav__icon"></i>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <i class="fas fa-plane side-nav__icon"></i>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <i class="fas fa-car side-nav__icon"></i>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <i class="fas fa-map side-nav__icon"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">
+            &copy; 2022 By DreamDevs. All rights reserved.
+          </div>
+        </nav>
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img src="[PHOTO]" alt="PHOTO" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="[PHOTO-1]" alt="PHOTO-1" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="[PHOTO-2]" alt="PHOTO-2" class="gallery__photo" />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Hotel Canvas</h1>
+            <div class="overview__stars">
+              <i class="fas fa-star overview__icon-star"> </i>
+              <i class="fas fa-star overview__icon-star"> </i>
+              <i class="fas fa-star overview__icon-star"> </i>
+              <i class="fas fa-star overview__icon-star"> </i>
+              <i class="fas fa-star overview__icon-star"> </i>
+            </div>
+            <div class="overview__location">
+              <i class="fas fa-map-pin overview__icon-location"></i>
+              <button class="btn-inline">Alhaim, Realm</button>
+            </div>
+            <div class="overview__rating">
+              <div class="overview__rating-average">9</div>
+              <div class="overview__rating-count">400 votes</div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                ullam cumque tenetur esse eligendi corporis voluptate odio
+                molestiae repudiandae, praesentium consequuntur. Exercitationem
+                accusamus officia odio.
+              </p>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                ullam cumque tenetur.
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the Mountains</li>
+                <li class="list__item">Close to the Bar</li>
+                <li class="list__item">Close to the Airport</li>
+                <li class="list__item">Close to the State</li>
+                <li class="list__item">Close to the Block</li>
+                <li class="list__item">Close to the Car</li>
+                <li class="list__item">Close to the Bike</li>
+                <li class="list__item">Close to the Camp</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="[FRIEND_PHOTO]"
+                    class="recommend__photo"
+                    alt="FRIEND"
+                  />
+                  <img
+                    src="[FRIEND_PHOTO]"
+                    class="recommend__photo"
+                    alt="FRIEND-1"
+                  />
+                  <img
+                    src="[FRIEND_PHOTO]"
+                    class="recommend__photo"
+                    alt="FRIEND-2"
+                  />
+                  <img
+                    src="[FRIEND_PHOTO]"
+                    class="recommend__photo"
+                    alt="FRIEND-3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis, debitis.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="[USER-1]" class="review__photo" alt="USER-1" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Jonathan Smith</p>
+                    <p class="review__user-date">Dec 12, 2022</p>
+                  </div>
+                  <div class="review__rating">8.0</div>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis, debitis. Lorem ipsum dolor sit amet.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="[USER-2]" class="review__photo" alt="USER-2" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Merry Anderson</p>
+                    <p class="review__user-date">Dec 11, 2022</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </div>
+            <div class="cta">
+              <h2 class="cta__book-now">Good news! we have no rooms!</h2>
+              <button class="btn">
+                <span class="btn__visible">Book now</span>
+                <span class="btn__invisible">No rooms</span>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script defer src="./index.js"></script>
+</html>
